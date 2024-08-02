@@ -6,6 +6,9 @@ return {
         backdrop = false,
       },
       modes = {
+        search = {
+          enabled = false,
+        },
         char = {
           jump_labels = true,
           highlight = {
@@ -13,6 +16,7 @@ return {
           },
         },
       },
+      vscode=true
     },
   },
 

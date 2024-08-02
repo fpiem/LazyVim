@@ -13,7 +13,9 @@ set({ "n", "v" }, "K", "{")
 set({ "n", "v" }, "{", "K")
 
 if vim.g.vscode then
+  set("n", "<leader>G", "")
   vim.cmd([[
+    nnoremap <leader>G <Cmd>call VSCodeNotify('workbench.action.tasks.runTask', 'close_lazygit')<CR>
     nnoremap <S-h> <Cmd>Tabprevious<CR>
     nnoremap <S-l> <Cmd>Tabnext<CR>
     nnoremap <silent> o <Cmd>call VSCodeNotify('editor.action.insertLineAfter')<CR>i
